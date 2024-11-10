@@ -1,2 +1,17 @@
-<p>lista-computadoras works!</p>
-<P>{{title}}</P>
+
+<p>comp</p>
+@if (computer.length===0) {
+<p>ho hay nada</p>
+}@else {
+    @for (computer of computer; track $index) {
+        <div>
+            <h4>{{computer.modelo}}</h4>
+        <p>{{computer.marca}}</p>
+        <img [src]="computer.poster" [alt]="computer.modelo">
+        <p><strong>año: </strong>{{computer.fecha}}</p>
+        <p><strong>precio: </strong>{{computer.precio}}</p>
+        <p></p>
+        </div>
+        
+    }
+}

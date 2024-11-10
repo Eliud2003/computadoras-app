@@ -1,0 +1,11 @@
+.computadora{
+    border: 2px solid gray;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+}
+.pelicula img{
+    border-radius: 10%;
+    width: 170px;
+    height: 250px;
+}

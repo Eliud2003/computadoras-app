@@ -1,93 +1,92 @@
 [
-    {
-      "id": 1,
-      "marca": "Apple",
-      "modelo": "MacBook Air M2",
-      "año": "2023-01-01",
-      "isGamer": false,
-      "poster": "https://example.com/macbook-air-m2.jpg",
-      "precio": 1200.00
-    },
-    {
-      "id": 2,
-      "marca": "Dell",
-      "modelo": "XPS 13",
-      "año": "2023-03-15",
-      "isGamer": false,
-      "poster": "https://example.com/dell-xps-13.jpg",
-      "precio": 1100.00
-    },
-    {
-      "id": 3,
-      "marca": "HP",
-      "modelo": "Omen 15",
-      "año": "2022-02-20",
-      "isGamer": true,
-      "poster": "https://example.com/hp-omen-15.jpg",
-      "precio": 1500.00
-    },
-    {
-      "id": 4,
-      "marca": "Lenovo",
-      "modelo": "Legion 5",
-      "año": "2024-04-10",
-      "isGamer": true,
-      "poster": "https://example.com/lenovo-legion-5.jpg",
-      "precio": 1300.00
-    },
-    {
-      "id": 5,
-      "marca": "Asus",
-      "modelo": "ZenBook Duo",
-      "año": "2023-09-05",
-      "isGamer": false,
-      "poster": "https://example.com/asus-zenbook-duo.jpg",
-      "precio": 1400.00
-    },
-    {
-      "id": 6,
-      "marca": "Acer",
-      "modelo": "Nitro 5",
-      "año": "2020-03-15",
-      "isGamer": true,
-      "poster": "https://example.com/acer-nitro-5.jpg",
-      "precio": 1000.00
-    },
-    {
-      "id": 7,
-      "marca": "MSI",
-      "modelo": "Stealth 15",
-      "año": "2019-07-25",
-      "isGamer": true,
-      "poster": "https://example.com/msi-stealth-15.jpg",
-      "precio": 1700.00
-    },
-    {
-      "id": 8,
-      "marca": "Microsoft",
-      "modelo": "Surface Laptop 4",
-      "año": "2022-08-10",
-      "isGamer": false,
-      "poster": "https://example.com/microsoft-surface-laptop-4.jpg",
-      "precio": 900.00
-    },
-    {
-      "id": 9,
-      "marca": "Razer",
-      "modelo": "Blade 15",
-      "año": "2021-12-1",
-      "isGamer": true,
-      "poster": "https://example.com/razer-blade-15.jpg",
-      "precio": 2000.00
-    },
-    {
-      "id": 10,
-      "marca": "Samsung",
-      "modelo": "Galaxy Book Pro",
-      "año": "2023-06-30",
-      "isGamer": false,
-      "poster": "https://example.com/samsung-galaxy-book-pro.jpg",
-      "precio": 800.00
-    }
-  ]
-  
+  {
+    "id": 1,
+    "marca": "Apple",
+    "modelo": "MacBook Air M2",
+    "fecha": "2023-01-01",
+    "isGamer": false,
+    "poster": "https://example.com/macbook-air-m2.jpg",
+    "precio": 1200
+  },
+  {
+    "id": 2,
+    "marca": "Dell",
+    "modelo": "XPS 13",
+    "fecha": "2023-03-15",
+    "isGamer": false,
+    "poster": "https://example.com/dell-xps-13.jpg",
+    "precio": 1100
+  },
+  {
+    "id": 3,
+    "marca": "HP",
+    "modelo": "Omen 15",
+    "fecha": "2022-02-20",
+    "isGamer": true,
+    "poster": "https://example.com/hp-omen-15.jpg",
+    "precio": 1500
+  },
+  {
+    "id": 4,
+    "marca": "Lenovo",
+    "modelo": "Legion 5",
+    "fecha": "2024-04-10",
+    "isGamer": true,
+    "poster": "https://example.com/lenovo-legion-5.jpg",
+    "precio": 1300
+  },
+  {
+    "id": 5,
+    "marca": "Asus",
+    "modelo": "ZenBook Duo",
+    "fecha": "2023-09-05",
+    "isGamer": false,
+    "poster": "https://example.com/asus-zenbook-duo.jpg",
+    "precio": 1400
+  },
+  {
+    "id": 6,
+    "marca": "Acer",
+    "modelo": "Nitro 5",
+    "fecha": "2020-03-15",
+    "isGamer": true,
+    "poster": "https://example.com/acer-nitro-5.jpg",
+    "precio": 1000
+  },
+  {
+    "id": 7,
+    "marca": "MSI",
+    "modelo": "Stealth 15",
+    "fecha": "2019-07-25",
+    "isGamer": true,
+    "poster": "https://example.com/msi-stealth-15.jpg",
+    "precio": 1700
+  },
+  {
+    "id": 8,
+    "marca": "Microsoft",
+    "modelo": "Surface Laptop 4",
+    "fecha": "2022-08-10",
+    "isGamer": false,
+    "poster": "https://example.com/microsoft-surface-laptop-4.jpg",
+    "precio": 900
+  },
+  {
+    "id": 9,
+    "marca": "Razer",
+    "modelo": "Blade 15",
+    "fecha": "2021-12-01",
+    "isGamer": true,
+    "poster": "https://example.com/razer-blade-15.jpg",
+    "precio": 2000
+  },
+  {
+    "id": 10,
+    "marca": "Samsung",
+    "modelo": "Galaxy Book Pro",
+    "fecha": "2023-06-30",
+    "isGamer": false,
+    "poster": "https://example.com/samsung-galaxy-book-pro.jpg",
+    "precio": 800
+  }
+]
