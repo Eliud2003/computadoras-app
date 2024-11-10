@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Computadora } from '../../../models/Computadora';
 import { ComputadorasjsonService } from '../../services/computadorasjson.service';
+import { CurrencyPipe, DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-lista-computadoras',
   standalone: true,
-  imports: [],
+  imports: [CurrencyPipe,DatePipe],
   templateUrl: './lista-computadoras.component.html',
   styleUrl: './lista-computadoras.component.css'
 })

@@ -1,17 +1,16 @@
-
-<p>comp</p>
-@if (computer.length===0) {
-<p>ho hay nada</p>
-}@else {
-    @for (computer of computer; track $index) {
-        <div>
-            <h4>{{computer.modelo}}</h4>
-        <p>{{computer.marca}}</p>
-        <img [src]="computer.poster" [alt]="computer.modelo">
-        <p><strong>año: </strong>{{computer.fecha}}</p>
-        <p><strong>precio: </strong>{{computer.precio}}</p>
-        <p></p>
-        </div>
-        
-    }
+<p class="no-computers">COMPUTADORAS</p>
+@if (computer.length === 0) {
+    <p class="no-computers">No hay nada</p>
+} @else {
+    <div class="container">
+        @for (computer of computer; track $index) {
+            <div class="computer-card">
+                <h4>{{computer.modelo}}</h4>
+                <p>{{computer.marca}}</p>
+                <img class="computer-image" [src]="computer.poster" [alt]="computer.modelo">
+                <p><strong>Año: </strong>{{computer.fecha | date:"shorDate"}}</p>
+                <p><strong>Precio: </strong>{{computer.precio | currency:"USD" }}</p>
+            </div>
+        }
+    </div>
 }
