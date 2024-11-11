@@ -1,15 +1,34 @@
-<p class="no-computers">COMPUTADORAS</p>
+<!-- lista-computadoras.component.html -->
+<h1 class="title">{{title}}</h1>
+
 @if (computer.length === 0) {
-    <p class="no-computers">No hay nada</p>
+    <p class="no-computers">No hay computadoras disponibles</p>
 } @else {
     <div class="container">
         @for (computer of computer; track $index) {
-            <div class="computer-card">
+            <div class="computer-card" [class.highlight]="selectedComputer === computer">
+                <div class="favorite-icon" (click)="toggleFavorito(computer.id)">
+                    <span [class.active]="isFavorite(computer.id)">♥</span>
+                </div>
                 <h4>{{computer.modelo}}</h4>
-                <p>{{computer.marca}}</p>
+                <p class="marca">{{computer.marca}}</p>
                 <img class="computer-image" [src]="computer.poster" [alt]="computer.modelo">
-                <p><strong>Año: </strong>{{computer.fecha | date:"shorDate"}}</p>
+                <p><strong>Año: </strong>{{computer.fecha | date:"dd-MMMM-yyyy"}}</p>
                 <p><strong>Precio: </strong>{{computer.precio | currency:"USD" }}</p>
+                <div class="button-group">
+                    <button class="btn-comprar" (click)="comprar(computer)">COMPRAR</button>
+                    <button class="btn-detalles" (click)="verDetalles(computer)">
+                        {{selectedComputer === computer ? 'OCULTAR' : 'DETALLES'}}
+                    </button>
+                </div>
+                @if (selectedComputer === computer) {
+                    <div class="detalles-panel">
+                        <h5>Especificaciones:</h5>
+                        <p><strong>Precio:</strong> {{computer.precio}}</p>
+                        <p><strong>modelo:</strong> {{computer.modelo}} GB</p>
+                        <p><strong>es gamer:</strong> {{computer.isGamer}} GB</p>
+                    </div>
+                }
             </div>
         }
     </div>
